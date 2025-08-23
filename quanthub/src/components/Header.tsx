@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
@@ -12,8 +12,6 @@ const Header: React.FC = () => {
     setShowDropdown(false);
     navigate("/landing");
   };
-
-  
 
   const getUserInitials = (email: string) => {
     return email.split("@")[0].substring(0, 2).toUpperCase();

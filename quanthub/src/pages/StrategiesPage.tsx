@@ -4,7 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import Header from "../components/Header";
 import { useAuth } from "../contexts/AuthContext";
 import AuthNotification from "../components/AuthNotification";
-import { Link } from "react-router-dom";
+
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,

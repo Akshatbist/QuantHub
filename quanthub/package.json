@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "typecheck": "tsc -b --pretty"
+    "preview": "vite preview"
   },
   "dependencies": {
   "@supabase/auth-ui-react": "0.4.7",

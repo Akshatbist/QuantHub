@@ -26,9 +26,7 @@ const HomePage: React.FC = () => {
             <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition-transform cursor-pointer">
               <div className="text-3xl mb-4">🔬</div>
               <h3 className="text-xl font-bold mb-2">Backtester</h3>
-              <p className="text-gray-400 text-sm">
-                Test strategies on historical data
-              </p>
+              <p className="text-gray-400 text-sm">Coming Soon...</p>
             </div>
             <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition-transform cursor-pointer">
               <div className="text-3xl mb-4">👥</div>

@@ -9,6 +9,8 @@ const supabase = createClient(
   import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
 );
 
+// implement a code download button
+
 interface Strategy {
   id: number;
   name: string;

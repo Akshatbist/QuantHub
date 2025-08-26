@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import { useAuth } from "../contexts/AuthContext";
 import AuthNotification from "../components/AuthNotification";
 
+// in vercel when i go back to strategy page it uses index.html instead of being redirected to its own
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,

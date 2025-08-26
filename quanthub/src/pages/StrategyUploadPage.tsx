@@ -3,7 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import { createClient } from "@supabase/supabase-js";
 
-const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY);
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
+);
 
 interface StrategyFormData {
   name: string;
@@ -164,10 +167,6 @@ const StrategyUploadPage: React.FC = () => {
     // Description validation
     if (!formData.description.trim()) {
       errors.description = "Strategy description is required";
-    } else if (formData.description.trim().length < 20) {
-      errors.description = "Description must be at least 20 characters long";
-    } else if (formData.description.trim().length > 2000) {
-      errors.description = "Description must be less than 2000 characters";
     }
 
     // Category validation

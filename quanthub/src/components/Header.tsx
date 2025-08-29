@@ -30,15 +30,15 @@ const Header: React.FC = () => {
         <Link to="/strategies" className="hover:text-white transition">
           Strategies
         </Link>
-        <Link to="/community" className="hover:text-white transition">
+        {/* <Link to="/community" className="hover:text-white transition">
           Community
-        </Link>
+        </Link> */}
         <Link to="/datasets" className="hover:text-white transition">
           Datasets
         </Link>
-        <Link to="/docs" className="hover:text-white transition">
+        {/* <Link to="/docs" className="hover:text-white transition">
           Docs
-        </Link>
+        </Link> */}
       </nav>
       {loading ? (
         <div className="w-8 h-8 bg-gray-700 rounded-full animate-pulse"></div>
@@ -78,7 +78,11 @@ const Header: React.FC = () => {
       ) : (
         <Link
           to="/auth"
-          className="ml-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded transition shadow"
+          className="ml-4 px-6 py-3 rounded-md bg-blue-600 text-white font-bold tracking-wide
+                                border border-blue-500 shadow-md
+                                hover:bg-blue-500 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-600/30
+                                active:translate-y-0
+                                transition-all duration-200 ease-out"
         >
           Get Started
         </Link>

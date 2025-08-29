@@ -17,9 +17,9 @@ const LandingPage = () => {
               Democratizing Quant Strategy Sharing
             </h1>
             <p className="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl">
-              A Hugging Face-like platform for quant traders and ML strategy
-              developers. Upload, test, run, and benchmark quant models in a
-              user-friendly, API-accessible, community-driven platform.
+              A platform for quant traders and ML strategy developers. Upload,
+              test, run, and benchmark quant models in a community-driven
+              platform.
             </p>
             <Link
               to="/auth"
@@ -40,16 +40,16 @@ const LandingPage = () => {
                 desc: "Easily upload and share your quant strategies with the community.",
                 icon: "⬆️",
               },
-              {
-                title: "Run Backtests",
-                desc: "Test strategies on historical data with robust, fast backtesting.",
-                icon: "📈",
-              },
-              {
-                title: "Performance Metrics",
-                desc: "Visualize returns, drawdowns, Sharpe ratios, and more.",
-                icon: "📊",
-              },
+              // {
+              //   title: "Run Backtests",
+              //   desc: "Test strategies on historical data with robust, fast backtesting.",
+              //   icon: "📈",
+              // },
+              // {
+              //   title: "Performance Metrics",
+              //   desc: "Visualize returns, drawdowns, Sharpe ratios, and more.",
+              //   icon: "📊",
+              // },
               {
                 title: "Host Datasets",
                 desc: "Access and contribute to a growing library of financial datasets.",
@@ -60,11 +60,11 @@ const LandingPage = () => {
                 desc: "Showcase your work, fork strategies, and star your favorites.",
                 icon: "👥",
               },
-              {
-                title: "API Access",
-                desc: "Integrate with our platform programmatically for automation.",
-                icon: "🔗",
-              },
+              // {
+              //   title: "API Access",
+              //   desc: "Integrate with our platform programmatically for automation.",
+              //   icon: "🔗",
+              // },
             ].map((f, i) => (
               <div
                 key={f.title}
@@ -88,12 +88,16 @@ const LandingPage = () => {
             <h2 className="text-3xl font-bold mb-4">
               Ready to share your quant strategy?
             </h2>
-            <a
-              href="#upload"
-              className="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-full text-lg font-semibold shadow-lg transition transform hover:scale-105"
+            <Link
+              to="/auth"
+              className="ml-4 px-6 py-3 rounded-md bg-blue-600 text-white font-bold tracking-wide
+                        border border-blue-500 shadow-md
+                        hover:bg-blue-500 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-600/30
+                        active:translate-y-0
+                        transition-all duration-200 ease-out"
             >
-              Upload Now
-            </a>
+              Get Started
+            </Link>
           </section>
         </main>
 
